@@ -1,0 +1,15 @@
+//!wAP a c++ which will add 2 distances given in feet and inches 
+//!wap to implement Fibonacci series using recursion 
+//!wap to count number of vowel and strings in switch case 
+//!wap to implement adamas uni semester marking system 
+//!wap c to access the array elements using pointers 
+//!wap c to implement copy and concertante and compare two strings without using library function 
+
+
+day 2 lab questions: 
+1.WAP a c which will add 2 distances given in feet and inches 
+2.wap to implement Fibonacci series using recursion 
+3.wap to count number of vowel and strings in switch case 
+4.wap to implement adamas uni semester marking system 
+5.wap c to access the array elements using pointers 
+6.wap c to implement copy and concatenate and compare two strings without using library function
