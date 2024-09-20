@@ -1,6 +1,3 @@
-Here’s the updated README with the additional information:
-
----
 
 # Principles of Programming
 
