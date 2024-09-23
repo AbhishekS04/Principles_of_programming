@@ -1,4 +1,5 @@
 //! WAP in c++ to check if a string is palindrome or not , without using string.h 
+
 #include <iostream>
 #include <cstring>
 using namespace std;
