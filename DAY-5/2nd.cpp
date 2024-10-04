@@ -1,4 +1,5 @@
 //! 2. write a cpp program that will create a class which will calculate the area of triangle, circle and rectangle having the same name.
+
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -6,19 +7,16 @@ using namespace std;
 class Shape
 {
 public:
-    // Calculate area of a triangle
     double calculateTriangleArea(double base, double height)
     {
         return 0.5 * base * height;
     }
 
-    // Calculate area of a circle
     double calculateCircleArea(double radius)
     {
         return M_PI * radius * radius;
     }
 
-    // Calculate area of a rectangle
     double calculateRectangleArea(double length, double width)
     {
         return length * width;
