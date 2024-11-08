@@ -72,9 +72,9 @@ public:
 int main()
 {
     RegisteredStudent student;
-    student.setPersonDetails("John Doe", 20);
-    student.setStudentDetails("12345", "Computer Science");
-    student.setRegistrationDetails("2023-001", "01-09-2023");
+    student.setPersonDetails("Abhishek singh", 20);
+    student.setStudentDetails("11", "Computer Science");
+    student.setRegistrationDetails("0008918", "01-09-2023");
 
     student.displayRegistrationDetails();
 
