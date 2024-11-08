@@ -1,4 +1,4 @@
-//! write a c++ prog to impliment multi level inheritance of student registeration system ?
+
 
 #include <iostream>
 #include <string>
@@ -13,71 +13,67 @@ protected:
     int age;
 
 public:
-    void setPersonDetails(const string &name, int age)
+    void setPersonDetails(string n, int a)
     {
-        this->name = name;
-        this->age = age;
+        name = n;
+        age = a;
     }
 
-    void displayPersonDetails() const
+    void displayPersonDetails()
     {
         cout << "Name: " << name << endl;
         cout << "Age: " << age << endl;
     }
 };
 
-// Derived class
+// Derived class from Person
 class Student : public Person
 {
 protected:
-    string rollNumber;
-    string course;
+    int studentID;
 
 public:
-    void setStudentDetails(const string &rollNumber, const string &course)
+    void setStudentDetails(string n, int a, int id)
     {
-        this->rollNumber = rollNumber;
-        this->course = course;
+        setPersonDetails(n, a);
+        studentID = id;
     }
 
-    void displayStudentDetails() const
+    void displayStudentDetails()
     {
         displayPersonDetails();
-        cout << "Roll Number: " << rollNumber << endl;
-        cout << "Course: " << course << endl;
+        cout << "Student ID: " << studentID << endl;
     }
 };
 
-// Further derived class
-class RegisteredStudent : public Student
+// Derived class from Student
+class Registration : public Student
 {
 private:
-    string registrationNumber;
+    string course;
     string registrationDate;
 
 public:
-    void setRegistrationDetails(const string &registrationNumber, const string &registrationDate)
+    void setRegistrationDetails(string n, int a, int id, string c, string rDate)
     {
-        this->registrationNumber = registrationNumber;
-        this->registrationDate = registrationDate;
+        setStudentDetails(n, a, id);
+        course = c;
+        registrationDate = rDate;
     }
 
-    void displayRegistrationDetails() const
+    void displayRegistrationDetails()
     {
         displayStudentDetails();
-        cout << "Registration Number: " << registrationNumber << endl;
+        cout << "Course: " << course << endl;
         cout << "Registration Date: " << registrationDate << endl;
     }
 };
 
 int main()
 {
-    RegisteredStudent student;
-    student.setPersonDetails("Abhishek singh", 20);
-    student.setStudentDetails("11", "Computer Science");
-    student.setRegistrationDetails("0008918", "01-09-2023");
-
-    student.displayRegistrationDetails();
+    Registration reg;
+    reg.setRegistrationDetails("John Doe", 20, 12345, "Computer Science", "2023-10-01");
+    reg.displayRegistrationDetails();
 
     return 0;
 }
