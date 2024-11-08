@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 #include <iostream>
 
 class Complex
@@ -74,5 +74,4 @@ int main() {
     c3.display();
 
     return 0;
->>>>>>> 765c4527e3b1b3262992620fd0d65b07de6f0d21
 }
